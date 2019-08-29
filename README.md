@@ -1,0 +1,193 @@
+<!doctype.html5>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	 *{margin: 0; padding: 0;}
+        body{ font-size:20px;}
+        .banner{position: relative; width: 100%; margin: 0 auto;}
+        .banner img{width:100%; heigth:92%;}
+        .heading{color:white; position: absolute; top: 18%; width:71%; text-align: right; font-size:3rem;}
+        .paragraph{color:white; position: absolute; top: 26%; width:71%; text-align: right; font-size:3rem;}
+	.menu-container {
+      text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
+}
+.hex-wrapper {
+      margin-left: 15%;
+
+}
+.hex-row {
+    clear: auto;
+      
+}
+.shift {
+    margin-left: 98px;
+}
+.hexagon {
+  float: left;
+  position: relative;
+  margin: 30px 30px 10px 3px;
+  width: 100px;
+  height: 56px;
+  background-color: white;
+  background-position: center center;
+  z-index: 1;
+  filter: alpha(opacity=50);
+  \line-height: 52px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: .8em;
+  fontcolor: white;
+  cursor: pointer;
+  transition: color 500ms ease, text-shadow 500ms ease, background-color 500ms ease, -webkit-transform 1s ease-in-out;
+}
+.hexagon .fa {
+	font-size:28px;
+}
+.hexagon:hover {
+    color: white;
+    background-color: #2196F3;
+}
+.hexagon:hover a {
+	color:#fff;
+}
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+  z-index: -1;
+  /* Keeps borders smooth in webkit */
+  backface-visibility: hidden;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: inherit;
+}
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+  left: 0;
+  transform-origin: left top;
+  transform: rotate(-60deg) translate(-110px, 0);
+}
+.hexagon .face2 { transform: rotate(-60deg); }
+.hexagon .face2:before {
+  right: 0;
+  transform-origin: right top;
+  transform: rotate(60deg) translate(110px, 0);
+}
+
+@media only screen and (max-width: 768px)
+{
+.heading{color:white; position: absolute; top: 15%; width:91%; text-align: right; font-size:2rem;}
+}
+@media only screen and (max-width: 768px)
+{
+.paragraph{color:white; position: absolute; top: 26%; width:71%; text-align: right; font-size:2rem;}
+}
+	</style>
+	</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-left d-block d-sm-none">        
+<a href="#" class="navbar-brand">Hi am Alex</a>
+        <button class="navbar-toggler float-right" data-toggle="collapse" data-target="#navbarmenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarmenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index1.html" class="nav-link">Home</a>
+                
+                </li>
+                <li class="nav-item active">
+                    <a href="about.html" class="nav-link">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="acaademics.html" class="nav-link">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="technical.html" class="nav-link">Technical Aspects</a>                    
+                </li>
+                <li class="nav-item">
+                    <a href="hobbies.html" class="nav-link">Hobbies and interests</a>
+                </li>
+            </ul>
+        </div>		
+    </nav>
+ <div class="container-fluid">
+            <div class="row">
+                <div class="banner">
+            <img src='https://www.tokkoro.com/picsup/2639410-mr-robot-4k-ultra-high-definition-wallpaper.jpg'class="img-responsive" alt="Responsive image"
+                 width="100%" height="100%" />
+                    <h4 class="heading">Siddharth Alex</h4>
+                    <u class="paragraph"><marquee width="40%" direction="left" height="30%" behaviour="slide" scrollamount="6">
+    Welcomes you to his resume.
+
+</marquee></u>
+<div class="menu-container d-none d-sm-block">
+  
+  <div class="hex-wrapper">
+    <div class="hex-row shift">
+      <div class="hexagon" id="nav-home">
+	  <i class="fa fa-home fa-lg"></i>
+	  <a href="index1.html" class="nav-link">Home</a>
+        <div class="face1"></div>
+        <div class="face2"></div>
+      </div>
+    </div>
+    <div class="hex-row">
+      <div class="hexagon" id="nav-about">
+	  <i class="fa fa-child fa-lg"></i>
+      <a href="about.html" class="nav-link">About</a>
+        <div class="face1"></div>
+        <div class="face2"></div>
+      </div>
+      <div class="hexagon" id="nav-work">
+	  <i class="fa fa-graduation-cap fa-lg"></i>
+      <a href="acaademics.html" class="nav-link">Academic</a>
+        <div class="face1"></div>
+        <div class="face2"></div>
+      </div>
+    </div>
+    <div class="hex-row shift">
+      <div class="hexagon" id="nav-contact">
+	  <i class="fa fa-code fa-lg"></i>
+        <a href="technical.html" class="nav-link">Skills</a>
+        <div class="face1"></div>
+        <div class="face2"></div>
+      </div>
+    </div>
+	    <div class="hex-row shift">
+      <div class="hexagon" id="nav-contact">
+	  <i class="fa fa-steam fa-lg"></i>
+	  <a href="hobbies.html" class="nav-link">Hobbies</a>
+        <div class="face1"></div>
+        <div class="face2"></div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
